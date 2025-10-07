@@ -1,0 +1,143 @@
+.layout-paciente {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background-color: #dcedc8;
+}
+
+/* Menú lateral en escritorio */
+.menu-paciente {
+  width: 260px;
+  background-color: #a5d6a7;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #1b5e20;
+}
+
+.menu-paciente h2 {
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.menu-paciente ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+.menu-paciente li {
+  margin-bottom: 14px;
+  padding: 8px 0;
+  border-bottom: 1px solid #c5e1a5;
+  text-align: left;
+}
+
+.link-paciente {
+  text-decoration: none;
+  color: #1b5e20;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.link-paciente:hover {
+  background-color: #aed581;
+}
+
+.boton-inicio {
+  margin-top: 30px;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+.panel-paciente {
+  flex: 1;
+  padding: 40px;
+  overflow-y: auto;
+  background-color: #f1f8e9;
+  border-left: 1px solid #c5e1a5;
+  padding-bottom: 120px;
+}
+
+/* ✅ Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .layout-paciente {
+    display: block; /* ✅ Evita división en columnas */
+    flex-direction: column;
+  }
+
+  .menu-paciente {
+    display: none; /* Oculto por defecto en móviles */
+  }
+
+  .menu-paciente.movil-activo {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* ✅ Ocupa todo el ancho */
+    max-height: 80vh;
+    overflow-y: auto;
+    background-color: #a5d6a7;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: #1b5e20;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+
+  .menu-paciente.movil-activo .link-paciente {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+    background-color: #2e7d32;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .menu-paciente.movil-activo .link-paciente:hover {
+    background-color: #388e3c;
+  }
+
+  .panel-paciente {
+    width: 100%;
+    padding: 20px;
+    border-top: 1px solid #c5e1a5;
+  }
+
+  .boton-inicio {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  .boton-hamburguesa {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .boton-hamburguesa button {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    font-size: 1.1em;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+}

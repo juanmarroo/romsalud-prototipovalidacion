@@ -1,0 +1,139 @@
+.layout-promotor {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background-color: #f0f4f8;
+}
+
+/* Menú lateral en escritorio */
+.menu-promotor {
+  width: 240px;
+  background-color: #fff3e0;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #e65100;
+}
+
+.titulo-menu {
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.lista-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+.link-promotor {
+  text-decoration: none;
+  color: #bf360c;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  margin-bottom: 14px;
+  display: block;
+}
+
+.link-promotor:hover {
+  background-color: #ffe0b2;
+}
+
+.boton-inicio {
+  margin-top: 30px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+/* Panel principal */
+.panel-promotor {
+  flex: 1;
+  padding: 40px;
+  overflow-y: auto;
+  background-color: #ffffff;
+  border-left: 1px solid #ffe0b2;
+  padding-bottom: 120px;
+}
+
+/* ✅ Responsive para móviles */
+@media (max-width: 768px) {
+  .layout-promotor {
+    display: block;
+    flex-direction: column;
+  }
+
+  .menu-promotor {
+    display: none;
+  }
+
+  .menu-promotor.movil-activo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: 80vh;
+    overflow-y: auto;
+    background-color: #fff3e0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: #e65100;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+
+  .menu-promotor.movil-activo .link-promotor {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+    background-color: #e65100;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .menu-promotor.movil-activo .link-promotor:hover {
+    background-color: #ff8a65;
+  }
+
+  .panel-promotor {
+    width: 100%;
+    padding: 20px;
+    border-top: 1px solid #ffe0b2;
+  }
+
+  .boton-inicio {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  .boton-hamburguesa {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .boton-hamburguesa button {
+    background-color: #e65100;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    font-size: 1.1em;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+}

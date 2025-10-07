@@ -1,0 +1,97 @@
+/* Estilos generales para reorganizar el layout en móviles */
+.panel-profesional {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .panel-profesional {
+    flex-direction: column !important;
+  }
+
+  .boton-hamburguesa {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .boton-hamburguesa button {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    font-size: 1.1em;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .menu-lateral {
+    width: 100% !important;
+    padding: 15px !important;
+    text-align: center;
+    order: -1;
+    background-color: #0077cc !important;
+    color: white !important;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  .menu-lateral button {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+    background-color: #005fa3;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+
+  .area-principal {
+    padding: 20px !important;
+    width: 100% !important;
+  }
+
+  .ficha-paciente,
+  .acciones-sugeridas,
+  .contenedor-filtros,
+  .registro-paciente {
+    padding: 15px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .contenedor-paginacion {
+    flex-direction: column !important;
+    gap: 8px !important;
+    align-items: center !important;
+  }
+
+  button {
+    font-size: 0.95em !important;
+    padding: 10px 14px !important;
+    min-width: 160px;
+  }
+
+  input[type="text"],
+  input[type="date"],
+  input[type="password"],
+  textarea,
+  select {
+    font-size: 1em !important;
+    padding: 10px !important;
+    width: 100% !important;
+    margin-bottom: 10px !important;
+  }
+
+  ul {
+    padding-left: 20px !important;
+  }
+
+  h2, h3, h4 {
+    font-size: 1.2em !important;
+  }
+}
+

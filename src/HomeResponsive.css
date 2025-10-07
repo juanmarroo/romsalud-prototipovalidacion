@@ -1,0 +1,29 @@
+@media (max-width: 768px) {
+  .logo-fade {
+    width: 240px !important;
+  }
+
+  h1 {
+    font-size: 2em !important;
+  }
+
+  .home-card {
+    padding: 20px !important;
+  }
+
+  .home-button {
+    font-size: 0.95em !important;
+    padding: 10px 16px !important;
+  }
+
+  .button-container {
+    gap: 10px !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  footer {
+    padding-bottom: 40px;
+    font-size: 0.9em !important;
+  }
+}
