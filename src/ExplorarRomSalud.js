@@ -75,6 +75,24 @@ function ExplorarRomSalud() {
       </div>
 
       <div style={estiloSeccion}>
+  <h2 style={estiloTitulo}>🚐 Cabinas móviles y cobertura extendida</h2>
+  <div style={estiloCard}>
+    <p style={estiloTexto}>
+      RomSalud no se queda en la pantalla: se despliega en el territorio. Las <strong>cabinas móviles</strong> llevan tecnología clínica a zonas remotas, permitiendo consultas, registros y seguimiento en comunidades sin acceso tradicional. Cada cabina es una extensión digna del sistema, equipada con conectividad, sensores y autonomía operativa.
+    </p>
+  </div>
+</div>
+
+<div style={estiloSeccion}>
+  <h2 style={estiloTitulo}>🧠 Algoritmo de predicción y alertas clínicas</h2>
+  <div style={estiloCard}>
+    <p style={estiloTexto}>
+      La plataforma integra un <strong>algoritmo de predicción de enfermedades</strong> que analiza patrones clínicos y emite alertas tempranas. Estas alertas se combinan con <strong>reglas predefinidas</strong> para reforzar la seguridad del paciente y apoyar decisiones médicas en tiempo real. No es solo tecnología: es anticipación con propósito.
+    </p>
+  </div>
+</div>
+
+      <div style={estiloSeccion}>
         <h2 style={estiloTitulo}>🎓 Escuela RomSalud</h2>
         <div style={estiloCard}>
           <p style={estiloTexto}>
