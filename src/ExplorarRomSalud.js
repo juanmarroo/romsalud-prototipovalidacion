@@ -59,20 +59,33 @@ function ExplorarRomSalud() {
       <p style={estiloTexto}>
         RomSalud es más que una plataforma: es un ecosistema digital diseñado para transformar la experiencia clínica en territorios vulnerables. Aquí puedes conocer sus módulos, su arquitectura ética y su impacto real.
       </p>
+<div style={estiloSeccion}>
+  <h2 style={estiloTitulo}>🩺 Módulos clínicos</h2>
 
-      <div style={estiloSeccion}>
-        <h2 style={estiloTitulo}>🩺 Módulos clínicos</h2>
-        <div style={estiloCard}>
-          <p style={estiloTexto}>
-            Registro de signos vitales, visualización longitudinal, alertas clínicas y navegación intuitiva. Cada dato cuenta, cada paciente importa.
-          </p>
-        </div>
-        <div style={estiloCard}>
-          <p style={estiloTexto}>
-            Motor de reglas clínicas que reacciona en tiempo real. El sistema no solo guarda información: la interpreta para cuidar mejor.
-          </p>
-        </div>
-      </div>
+  <div style={estiloCard}>
+    <p style={estiloTexto}>
+      RomSalud es una <strong>plataforma de telemedicina</strong> diseñada para ofrecer atención clínica real en territorios vulnerables. No es solo un sistema digital: es una <strong>clínica digital</strong> que conecta pacientes con profesionales de salud, brindando acompañamiento humano, seguimiento continuo y decisiones compartidas.
+    </p>
+  </div>
+
+  <div style={estiloCard}>
+    <p style={estiloTexto}>
+      El paciente puede acceder a <strong>consultas en línea</strong>, recibir orientación médica y participar activamente en su cuidado. La tecnología no reemplaza al médico: lo potencia. Cada módulo está pensado para facilitar el vínculo clínico, incluso en zonas remotas.
+    </p>
+  </div>
+
+  <div style={estiloCard}>
+    <p style={estiloTexto}>
+      La plataforma incluye <strong>registro de signos vitales</strong>, visualización longitudinal, alertas clínicas y navegación intuitiva. Cada dato cuenta, cada paciente importa.
+    </p>
+  </div>
+
+  <div style={estiloCard}>
+    <p style={estiloTexto}>
+      Un <strong>motor de reglas clínicas</strong> reacciona en tiempo real, interpretando la información para apoyar decisiones médicas. Además, el <strong>algoritmo de predicción de enfermedades</strong> permite emitir alertas tempranas, anticipar riesgos y fortalecer la seguridad clínica.
+    </p>
+  </div>
+</div>
 
       <div style={estiloSeccion}>
   <h2 style={estiloTitulo}>🚐 Cabinas móviles y cobertura extendida</h2>
