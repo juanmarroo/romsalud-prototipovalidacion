@@ -524,65 +524,64 @@ return (
   </div>
 )}
         {vista === 'registrar' && (
-  <div className="registro-paciente">
-    <h3>Registrar nuevo paciente</h3>
+  <div className="registro-paciente tarjeta-registro">
+    <h2 className="titulo-registro">Registro de nuevo paciente</h2>
+    <p className="subtitulo-registro">Completa los datos para iniciar el seguimiento clínico</p>
 
     <input
       placeholder="Nombre completo"
       value={nuevoPaciente.nombre}
       onChange={e => setNuevoPaciente({ ...nuevoPaciente, nombre: e.target.value })}
-    /><br />
+    />
 
     <input
       placeholder="Edad"
       value={nuevoPaciente.edad}
       onChange={e => setNuevoPaciente({ ...nuevoPaciente, edad: e.target.value })}
-    /><br />
+    />
 
     <input
       placeholder="Sexo (M/F)"
       value={nuevoPaciente.sexo}
       onChange={e => setNuevoPaciente({ ...nuevoPaciente, sexo: e.target.value })}
-    /><br />
+    />
 
     <input
       placeholder="Documento de identidad (Cédula o Pasaporte)"
       value={nuevoPaciente.documento}
       onChange={e => setNuevoPaciente({ ...nuevoPaciente, documento: e.target.value })}
-    /><br />
+    />
 
     <input
       placeholder="Motivo de consulta"
       value={nuevoPaciente.motivoConsulta}
       onChange={e => setNuevoPaciente({ ...nuevoPaciente, motivoConsulta: e.target.value })}
-    /><br />
+    />
 
     <textarea
       placeholder="Antecedentes relevantes (Ej. hipertensión, diabetes)"
       value={nuevoPaciente.antecedentes}
       onChange={e => setNuevoPaciente({ ...nuevoPaciente, antecedentes: e.target.value })}
       rows={3}
-      style={{ width: '100%', marginTop: '10px' }}
-    /><br />
+    />
 
     <select
       value={nuevoPaciente.tipoIngreso}
       onChange={e => setNuevoPaciente({ ...nuevoPaciente, tipoIngreso: e.target.value })}
-      style={{ marginTop: '10px' }}
     >
       <option value="">Tipo de ingreso</option>
       <option value="consulta">Consulta</option>
       <option value="emergencia">Emergencia</option>
       <option value="derivacion">Derivación</option>
-    </select><br />
+    </select>
 
     <input
       placeholder="Contraseña para el paciente"
       value={nuevoPaciente.clave}
       onChange={e => setNuevoPaciente({ ...nuevoPaciente, clave: e.target.value })}
-    /><br />
+    />
 
-    <button onClick={registrarPaciente} style={{ marginTop: '10px' }}>
+    <button onClick={registrarPaciente} className="boton-registrar">
       Guardar paciente
     </button>
   </div>
